@@ -53,7 +53,7 @@
      <string>Coding Book</string>
     </property>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="layoutEncodeText">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -83,7 +83,7 @@ p, li { white-space: pre-wrap; }
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="layoutDecodeText">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -113,8 +113,8 @@ p, li { white-space: pre-wrap; }
      </item>
     </layout>
    </widget>
-   <zorder>layoutWidget</zorder>
-   <zorder>layoutWidget</zorder>
+   <zorder>layoutDecodeText</zorder>
+   <zorder>layoutEncodeText</zorder>
    <zorder>pbEncoding</zorder>
    <zorder>pbDecoding</zorder>
    <zorder>pbCodingBook</zorder>

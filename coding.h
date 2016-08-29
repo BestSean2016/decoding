@@ -5,8 +5,8 @@
 extern "C" {
 #endif //__cplusplus
 
-char* encode(const char* str);
-char* decode(const char* str);
+char *encode(const char *str);
+char *decode(const char *str);
 
 #ifdef __cplusplus
 }
