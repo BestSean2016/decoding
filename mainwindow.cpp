@@ -1,5 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "ui_dlgcodingbook.h"
+
 #include "coding.h"
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -23,10 +25,19 @@ int MainWindow::decoding(){
 
     return 0;
 }
+
 int MainWindow::encoding(){
     QString str = ui->txPlainText->toPlainText();
     ui->txCodeText->setText("");
     if (str.length() > 0)
         ui->txCodeText->setText(encode(str.toStdString().c_str()));
     return 0;
+}
+
+void MainWindow::showBook() {
+    QDialog dlg;
+    Ui::dlgCodingBook ui_dlg;
+    ui_dlg.setupUi(&dlg);
+    dlg.setWindowTitle("Birth Gift For My Son!");
+    dlg.exec();
 }

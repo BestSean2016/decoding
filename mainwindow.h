@@ -18,6 +18,7 @@ public:
 public slots:
     int decoding();
     int encoding();
+    void showBook();
 
 private:
     Ui::MainWindow *ui;

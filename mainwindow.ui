@@ -155,5 +155,21 @@ p, li { white-space: pre-wrap; }
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pbCodingBook</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showBook()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>345</x>
+     <y>280</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
 </ui>
