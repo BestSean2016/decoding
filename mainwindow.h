@@ -15,6 +15,10 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+public slots:
+    int decoding();
+    int encoding();
+
 private:
     Ui::MainWindow *ui;
 };
